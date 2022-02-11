@@ -24,22 +24,18 @@ html {
     justify-content: center;
 
 }
+main {
+    margin-top: 4rem;
+}
 .container {
     display: grid;
-    /* flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 4rem;     */
     grid-template-columns: 1fr 1fr;
 }
 
 .center-taller, .center-obra, .center-bio, .center-contacto {
     justify-self: center;
     align-self: center;
-    padding: 0.5rem;
-    
-   
-    
+    padding: 0.5rem;     
 }
 .center-taller {
     grid-column: 2 / 3;
@@ -57,26 +53,45 @@ html {
     grid-column: 1 / 2;
     grid-row: 5 / 6;
 }
-
-#cuadro1-1  {
+div > p {   
+    font-size: 4rem;
+    font-weight: bolder;
+}
+#texto-taller, #texto-biografia {
+    color:  #938c8cb0;
+}
+#texto-obra, #texto-contacto {
+    color:  #665959b0;
+}
+#cuadro1, #cuadro2, #cuadro3, #cuadro4 {
+    width: 95%;
+    height: 95%;
+    border-radius: 4rem;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+#cuadro1  {
     background-color: #F4DFD0;
     grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    width: 80%;
-    height: 80%;
-    border-radius: 5rem;
-    justify-self: center;
-    align-self: center;
+    grid-row: 2 / 3;    
 }
-#cuadro1-2 {
+#cuadro2 {
     background-color: #CDBBA7;
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-    width: 100%;
-    height: 100%;
-    border-radius: 5rem;
-    justify-self: center;
-    align-self: center;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+#cuadro3 {
+    background-color: #F4DFD0;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+#cuadro4 {
+    background-color: #CDBBA7;
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
 }
 img {
     overflow: hidden;
