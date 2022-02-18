@@ -104,8 +104,8 @@ div > p {
       #cdbba7 80%, #cdbba7 100%
     );
 }
-#menu li:hover {
-    background-color: rgba(0, 128, 0, 0.103);
+#menu li:hover a {
+   font-size: 7vw;
 }
 #ham-menu:focus #menu, 
 #ham-menu:focus-within #menu {
