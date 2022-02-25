@@ -18,6 +18,12 @@ html {
     grid-template-columns: 1fr 1fr;
     top: 0vw;
 }
+@media (min-width: 900px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 2vw;
+    }
+}
 .center-taller, .center-obra, .center-bio, .center-contacto {
     justify-self: center;
     align-self: center;
@@ -144,7 +150,7 @@ color: rgb(252, 222, 183);
     #5a5249 40%, #5a5249 60%, 
     #cdbba7 60%, #cdbba7 80%, 
     #5a5249 80%, #5a5249 100%);
-    transition: 1s;
+    
 }
 @media (min-width: 768px) {
     #menu ul {
@@ -171,6 +177,56 @@ color: rgb(252, 222, 183);
     display: flex;
     justify-content: center;
     align-items: center;    
+}
+@media (min-width: 900px) {
+    #cuadro1, #cuadro2, #cuadro3, #cuadro4 {
+        width: 30vw;
+        height: 30vw;
+    }
+    #cuadro5, #cuadro6, #cuadro7, #cuadro8 {
+        width: 30vw;
+        height: 30vw;
+        border-radius: 6vw;
+        justify-self: center;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+    #cuadro5 { 
+        background-color: #F4DFD0;
+        position: relative;
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;        
+    }
+    #cuadro6 {
+         background-color: #FDEFEF;
+         position: relative;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        }
+    #cuadro7 { 
+        background-color: #CDBBA7;
+        position: relative;
+        grid-column: 3 / 4;
+        grid-row: 4 / 5;
+    }
+    #cuadro8 {
+        background-color: #DAD0C2;
+        position: relative;
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+    .center-obra {
+        grid-column: 3 / 4;
+    }
+    .center-contacto {
+        grid-column: 3 / 4;
+    }
+    section >img {
+        width: 30vw;
+        height: 30vw;
+    }
 }
 #cuadro1:hover {
     background-color: #eed0ba ;
@@ -212,17 +268,6 @@ img {
     overflow: hidden;
     border-radius: 6vw;
     width: 43vw;
-}
-@media (min-width: 900px) {
-    img {
-        width: 33vw;
-        margin-bottom: 10%;
-    }
-    #cuadro1, #cuadro2, #cuadro3, #cuadro4 {
-        width: 33vw;
-        height: 33vw;
-        margin-bottom: 10%;
-    }
 }
 .links {
     display: block;
